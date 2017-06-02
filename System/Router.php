@@ -3,7 +3,7 @@
 namespace System;
 
 use \System\Http\Request;
-use \System\Http\Response
+use \System\Http\Response;
 
 class Router
 {
