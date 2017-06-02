@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteBase /
+ReWriteRule ^ index.php [QSA,L]
+
+# php settings
+php_value session.name sid
+php_value session.gc_probability 1
+php_value session.cookie_httponly 1

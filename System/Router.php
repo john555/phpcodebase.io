@@ -2,6 +2,9 @@
 
 namespace System;
 
+use \System\Http\Request;
+use \System\Http\Response
+
 class Router
 {
     public $requestHandler;
@@ -18,7 +21,7 @@ class Router
     private $signInManager;
     private $signInUrl = SIGN_IN_URL;
     
-    function __construct(\System\Http\Request $requestHandler, \System\Http\Response $responseHandler)
+    function __construct(Request $requestHandler, Response $responseHandler)
     {
         $this->requestHandler = $requestHandler;
         $this->responseHandler = $responseHandler;
